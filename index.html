@@ -1,62 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil Page Immo Crea</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accueil Page Immo Crea</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
+    <!-- ------ FONT POPPINS ------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <div id="burgerMenu">
-    <i id="burgerMenuI" class="fas"></i>
-  </div>
-  <div id="scrollToTop" class="scrollToTopHidden">
-    <i id="scrollToTopI" class="fa fa-arrow-up"></i>
-  </div>
-  <!-- ----- LARGE NAV ----- -->
-  <nav id="largeNav">
-    <div id="largeNavTop">
-      <a href="#"><img src="./asset/img/logo.png" alt="Logo"></a>
-      <p>Immo'Créa Luxe</p>
-    </div>
-    <div id="largeNavBottom">
-      <ul>
-        <li><a href="#" class="navActive">Accueil</a></li>
-        <li><a href="./maisons">Maisons</a></li>
-        <li><a href="./agents">Agents</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- ----- SMALL NAV ----- -->
-  <nav id="smallNav" class="smallNavHidden">
-    <div id="smallNavTop">
-      <a href="#"><img src="./asset/img/logo.png" alt="Logo"></a>
-      <p>Immo'Créa Luxe</p>
-    </div>
-    <div id="smallNavBottom">
-      <ul>
-        <li><a href="#" class="navActive">Accueil</a></li>
-        <li><a href="./maisons">Maisons</a></li>
-        <li><a href="./agents">Agents</a></li>
-      </ul>
-    </div>
-    <div id="smallNavSocial"></div>
-  </nav>
+    <!-- ------ LINK FONTAWESOME ------ -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
 
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <!-- ------ FICHIER JS ------- -->
-  <script src="https://kit.fontawesome.com/00432931a5.js" crossorigin="anonymous"></script>
-  <script src="js/index.js"></script>
-</body>
+    <!-- ------ LINK CSS ------- -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
+  <body>
+    <!-- ----- MENU BURGER ----- -->
+
+    <div id="burgerMenu">
+        <i id="burgerMenuI" class="fas"></i>
+    </div>
+
+    <!-- ----- SCROLL TO TOP ----- -->
+
+    <div id="scrollToTop" class="scrollToTopHidden">
+        <i id="scrollToTopI" class="fa fa-arrow-up"></i>
+    </div>
+
+    <!-- ----- LARGE NAV ----- -->
+
+    <nav id="largeNav">
+        <div id="largeNavTop">
+          <a href="#"><img src="./asset/img/logo.png" alt="Logo"></a>
+          <p>Immo'Créa Luxe</p>
+        </div>
+        <div id="largeNavBottom">
+          <ul>
+            <li><a href="#" class="navActive">Accueil</a></li>
+            <li><a href="./maisons">Maisons</a></li>
+            <li><a href="./agents">Agents</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- ----- SMALL NAV ----- -->
+
+      <nav id="smallNav" class="smallNavHidden">
+        <div id="smallNavTop">
+          <a href="#"><img src="./asset/img/logo.png" alt="Logo"></a>
+          <p>Immo'Créa Luxe</p>
+        </div>
+        <div id="smallNavBottom">
+          <ul>
+            <li><a href="#" class="navActive">Accueil</a></li>
+            <li><a href="./maisons">Maisons</a></li>
+            <li><a href="./agents">Agents</a></li>
+          </ul>
+        </div>
+        <div id="smallNavSocial"></div>
+      </nav>
+
+    <!-- ------- HEADER ------- -->
+
+    <section class="header">
+      <div class="border">
+        <p>Une agence à votre écoute</p>
+        <div class="title">
+          <div class="ligne"></div>
+          <h1>Agence immo'Créa Luxe</h1>
+          <div class="ligne"></div>
+        </div>
+        <p>
+          Des projets immobiliers d'ambition, des rêves créatifs, des envies de
+          luxe
+        </p>
+        <a href="#top">Lorem Ipsum</a>
+      </div>
+      <div class="social">
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </section>
+
+    <!-- ------ SECTION PRESENTATION ------ -->
+
+    <section class="presentation">
+      <figure>
+        <img src="asset/img/img-presentation.png" alt="" />
+      </figure>
+      <div class="text">
+        <h2>Présentation de l'agence</h2>
+        <div class="sous-title">
+          <div class="ligne"></div>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+          quo facere officia illum aliquid at numquam adipisci saepe ut quidem
+          labore natus. Voluptatibus illo tenetur nemo facere quasi, sit quia?
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam facere
+          magnam cum, explicabo ut veritatis error cupiditate quisquam! Ut
+          obcaecati, praesentium eveniet cupiditate voluptatem eaque rem eum
+          nihil sint dicta?
+        </p>
+        <a href="contact.html">Contacter l'équipe</a>
+      </div>
+    </section>
+
+    <!-- ------ CAROUSSEL ------ -->
+
+    <section class="carrousel">
+      <div id="slider">
+        <a href="maison.html"
+          ><img src="asset/img/img-1-carrousel.png" alt="" id="slide"
+        /></a>
+        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+        <div id="suivant" onclick="ChangeSlide(1)">></div>
+      </div>
+    </section>
+
+    <!-- ------ FICHIER JS ------- -->
+    <script src="js/index.js"></script>
+  </body>
 </html>

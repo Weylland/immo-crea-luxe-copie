@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -61,10 +65,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-#largeNavBottom ul li,
-#smallNavBottom ul li {
-  list-style-type: none;
 }
 #largeNavBottom a,
 #smallNavBottom a {
@@ -207,6 +207,12 @@ body {
 }
 .scrollToTopshow {
   transform: translateY(0);
+}
+
+/* ----- SECTION -----*/
+
+section {
+  min-height: 100vh;
 }
 
 /* -- ------------- SECTION HEADER ---------------- -- */
@@ -434,58 +440,61 @@ section.carrousel img:hover {
 
 /* -- ---------- SECTION SERVICES -------------- -- */
 
-.services,.secteurs{
-  height:100vh;
-  display:block;
+.services,
+.secteurs {
+  display: block;
 }
 
-.servicesTitle,.maison_titre_page{
-  display:flex;
+.servicesTitle,
+.maison_titre_page {
+  display: flex;
   justify-content: center;
-  width:80%;
-  height:min-content;
-  align-items:center;
-  position:relative;   
+  width: 80%;
+  height: min-content;
+  align-items: center;
+  position: relative;
   padding-top: 50px;
-  margin:auto;
+  margin: auto;
 }
-.maison_titre_page{
-  padding-bottom:70px;
+.maison_titre_page {
+  padding-bottom: 70px;
 }
-.servicesTraitG, .servicesTraitD,.maison_traitG,.maison_traitD{
-  height:1px;
-  width:30%;
-  background-color:#dfc173; 
+.servicesTraitG,
+.servicesTraitD,
+.maison_traitG,
+.maison_traitD {
+  height: 1px;
+  width: 30%;
+  background-color: #dfc173;
   align-self: center;
 }
 
 .servicesH2,
 .secteursH2,
-.maison_h1{
-  margin:50px 20px;
+.maison_h1 {
+  margin: 50px 20px;
   font-size: 48px;
-  color:#dfc173;
+  color: #dfc173;
   font-family: "industrial";
 }
 
 .secteursH2 {
-  margin:50px 20px 50px 0;
+  margin: 50px 20px 50px 0;
 }
 
-.servicesH2{
+.servicesH2 {
   text-align: center;
 }
 
 .servicesBG {
   display: flex;
-  height:min-content;
+  height: min-content;
   min-height: 500px;
-  width:100%;
+  width: 100%;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
   margin-top: 70px;
-
 }
 
 .servicesBG {
@@ -495,28 +504,27 @@ section.carrousel img:hover {
   padding: 50px 0;
 }
 
-.servicesSquaresZoom{
-  width:270px;
-  height:260px;
+.servicesSquaresZoom {
+  width: 270px;
+  height: 260px;
   margin: 10px;
 }
 
 .servicesSquareCont {
-  width:70%;
-  display:flex;
+  width: 70%;
+  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.servicesSquares{
-  width:100%;
-  height:100%;
+.servicesSquares {
+  width: 100%;
+  height: 100%;
   box-shadow: 3px 3px 3px grey;
   text-align: center;
-  cursor:pointer;
+  cursor: pointer;
   transform-style: preserve-3d;
   transition: 0.5s;
-  
 }
 
 .servicesSquares_front {
@@ -526,41 +534,40 @@ section.carrousel img:hover {
   background-color: white;
 }
 
-.servicesSquares_front img{
+.servicesSquares_front img {
   max-width: 30%;
   height: auto;
   position: relative;
-  padding: 30px 0 10px 0;  
+  padding: 30px 0 10px 0;
 }
 
-.servicesSquares_front h3{
+.servicesSquares_front h3 {
   position: relative;
-  font-family:"industrial";
+  font-family: "industrial";
   font-size: 24px;
-  color:#dfc173;   
+  color: #dfc173;
 }
 
-.servicesSquares_front p{
+.servicesSquares_front p {
   position: relative;
   font-size: 16px;
   margin: 10px 20px 20px;
 }
 
-
 /*zoom et rotation cartess*/
 
-.servicesSquaresZoom:hover{
-  transform:scale(1.02); 
-  transition:0.7s;  
+.servicesSquaresZoom:hover {
+  transform: scale(1.02);
+  transition: 0.7s;
 }
-.servicesSquares_front:Hover{
+.servicesSquares_front:hover {
   box-shadow: 3px 3px 5px rgb(133, 126, 126);
   border: 2px #dfc173 solid;
 }
 
 /*fin zoom et rotation*/
 
-.servicesSquares_back{
+.servicesSquares_back {
   transform: rotateY(180deg);
   position: absolute;
   display: flex;
@@ -570,79 +577,77 @@ section.carrousel img:hover {
   left: 0;
   top: 0;
   background-color: white;
-  height: 100%;   
+  height: 100%;
 }
 
-.servicesSquares_back p{
+.servicesSquares_back p {
   padding: 20px;
 }
 
-.servicesSquares_front,.servicesSquares_back{
+.servicesSquares_front,
+.servicesSquares_back {
   backface-visibility: hidden;
-
 }
 
 .servicesSquares.flip {
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
 }
 
 /* -- ---------- SECTION SECTEUR -------------- -- */
 
-.secteursTitle{
+.secteursTitle {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 80%;
   margin: auto;
-  height:min-content;
+  height: min-content;
   position: relative;
-  padding-top:50px;
+  padding-top: 50px;
 }
 
-.secteursTraitD{
-  height:1px;
-  width:50%;
+.secteursTraitD {
+  height: 1px;
+  width: 50%;
   margin-top: 15px;
-  background-color:#dfc173; 
+  background-color: #dfc173;
 }
 
-.secteurs p{
-   align-self: flex-start;
-   font-size: 16px;
-   display:block;
+.secteurs p {
+  align-self: flex-start;
+  font-size: 16px;
+  display: block;
 }
 
 .secteursPres {
   height: min-content;
-  margin:auto;
+  margin: auto;
   position: relative;
-  padding:30px 0;
-  width:80%;
-
+  padding: 30px 0;
+  width: 80%;
 }
 
-.secteursContGlob{
-   display: flex;
-   width: 100%;
-   justify-content: center;
-   align-items: center;
-   height: min-content;
-   position: relative;
-   margin: 50px 0;
+.secteursContGlob {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  position: relative;
+  margin: 50px 0;
 }
 
-.secteursCont{
-   display: flex;
-   width:70%;
-   height:100%;
-   justify-content: space-around;
-   align-items: center;
-   
+.secteursCont {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.secteursCard{
+.secteursCard {
   display: block;
-  max-height: 100%;;
+  max-height: 100%;
   width: 30%;
   min-width: 250px;
   box-shadow: grey 4px 4px 4px;
@@ -651,33 +656,137 @@ section.carrousel img:hover {
   margin: 10px 0;
 }
 
-.secteursCard:hover{
-  transform:scale(1.02);
+.secteursCard:hover {
+  transform: scale(1.02);
   transition: 0.7s ease;
 }
 
-.secteursPhoto img{
+.secteursPhoto img {
   width: 100%;
   cursor: pointer;
 }
 
-.secteursCardTitle{
+.secteursCardTitle {
   text-align: center;
   font-family: industrial;
-  color:#dfc173;
+  color: #dfc173;
   font-size: 24px;
   height: 10%;
   text-shadow: grey;
   padding: 20px;
 }
 
-.secteursCardTxt{
+.secteursCardTxt {
   text-align: center;
-  padding:10px 10px;
-  height:40%;  
+  padding: 10px 10px;
+  height: 40%;
   padding: 20px;
 }
 
+/* -- ------ FOOTER ------ -- */
+
+footer {
+  width: 100%;
+  background: #17152a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+}
+
+#footerTop {
+  width: 80%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "industrial", serif;
+  font-size: 20px;
+}
+
+#footerTop img {
+  width: 80px;
+}
+
+.footerLine {
+  height: 1px;
+  width: 150px;
+  background: white;
+  margin: 15px 0;
+}
+
+#footerBottom {
+  width: 80%;
+  min-height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid#dfc173;
+  border-bottom: 1px solid#dfc173;
+}
+
+.aboutUs,
+.footerContact,
+.location,
+.footerSocial {
+  width: 300px;
+  height: 300px;
+}
+
+.aboutUs h4,
+.footerContact h4,
+.location h4,
+.footerSocial h4 {
+  margin: 20px 0;
+}
+
+.footerSocial h4 {
+  text-align: center;
+}
+
+.aboutUs li,
+.footerContact li,
+.location li,
+.footerSocial li {
+  margin: 20px 0;
+  font-weight: lighter;
+}
+
+.aboutUs li:hover,
+.footerContact li:hover,
+.location li:hover,
+.footerSocial li:hover {
+  font-weight: normal;
+}
+
+.socialList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.socialList a i {
+  color: white;
+  font-size: 25px;
+  padding: 10px 0;
+  transition: all 0.5s;
+}
+
+.socialList a i:hover {
+  color: #dfc173;
+}
+
+.legal {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* ----- MEDIA ----- */
 
@@ -703,6 +812,30 @@ section.carrousel img:hover {
   }
   section.presentation div.text {
     margin: 0 100px 0 150px;
+  }
+
+  /* ----- FOOTER ----- */
+
+  #footerBottom {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .aboutUs,
+  .footerContact,
+  .location,
+  .footerSocial {
+    height: fit-content;
+    margin: 20px;
+  }
+
+  .legal {
+    justify-content: center;
+  }
+
+  .legalLeft {
+    display: none;
   }
 }
 
@@ -739,12 +872,13 @@ section.carrousel img:hover {
 
   /* ----- SECTION SERVICE ET SECTEUR ----- */
 
-  .servicesSquareCont{
-    width:95%;
+  .servicesSquareCont {
+    width: 95%;
     justify-content: center;
   }
-  .services,.secteurs{
-    height:min-content;
+  .services,
+  .secteurs {
+    height: min-content;
     align-items: center;
   }
   /* .servicesSquares,.servicesSquaresZoom{
@@ -752,7 +886,7 @@ section.carrousel img:hover {
     height:160px;   
   } */
 
-  .secteursCont{
+  .secteursCont {
     flex-direction: column;
   }
 }
